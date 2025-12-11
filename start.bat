@@ -1,0 +1,6 @@
+@echo off
+echo Installing dependencies...
+pip install email-validator -q
+
+echo Starting Food Advisor Agent...
+python run_server.py
