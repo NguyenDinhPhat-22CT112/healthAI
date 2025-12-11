@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     environment: str = os.getenv("ENVIRONMENT", "development")
     
     # Database URLs
-    postgres_url: str = os.getenv("POSTGRES_URL", "postgresql://postgres:phatadmin@localhost:5432/HealthAI")
+    postgres_url: str = os.getenv("POSTGRES_URL", "postgresql://username:password@localhost:5432/database_name")
     
     # MongoDB - Hỗ trợ cả MongoDB Atlas và local MongoDB
     # MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/dbname?retryWrites=true&w=majority
